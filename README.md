@@ -51,8 +51,8 @@ $ npm test
 
 ## Assumption
 
-```
-$ The application consists solely of a home page, without any additional pages or sections.
-$ Users are only required to monitor their favorite items while using the app. There are no other specific tasks or functionalities.
-$ Authentication is not necessary to view cocktail details or access any other features of the application. All content is freely accessible without any authentication requirements.
-```
+---
+
+- The application consists solely of a home page, without any additional pages or sections.
+- Users are only required to monitor their favorite items while using the app. There are no other specific tasks or functionalities.
+- Authentication is not necessary to view cocktail details or access any other features of the application. All content is freely accessible without any authentication requirements.
