@@ -65,7 +65,6 @@ export function useGetCocktails(query, isFavourite) {
       })
       .catch((error) => {
         setApiResponseWaiting(false);
-        console.log(error);
         setErrorMessage(ERROR_FETCH_COCKTAILS);
       });
   };
@@ -94,7 +93,6 @@ export function useGetCocktails(query, isFavourite) {
       .catch((error) => {
         setApiResponseWaiting(false);
         setErrorMessage(ERROR_FETCH_SEARCHED_COCKTAILS);
-        console.log(error);
       });
   };
 
