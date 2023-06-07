@@ -11,7 +11,7 @@ Whenever the page is refreshed, the application will automatically send a reques
 Search Functionality:
 
 - When a user types in the search box, the application displays the search results based on the query. If no results are available, a message stating "No data available" is shown.
-- Additionally, I have included the option to add a cocktail item to the user's favorites list for better usability. This option is available for each cocktail item in the search results.
+- Additionally, I have included the option to add a cocktail item to the user's favorites list for better usability. This option is available for each cocktail item in the search results and for each random cocktail items.
 
 Adding to Favorites:
 
