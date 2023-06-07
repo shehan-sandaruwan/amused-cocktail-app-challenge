@@ -6,7 +6,7 @@ To manage the state within the application, I have utilized the useState hooks p
 
 In order to fetch cocktail items from the server, I have made use of the "/random" API endpoint. Since this endpoint only provides one item at a time, I needed to make five separate API calls to fulfill the requirement of displaying five random cocktails.
 
-Whenever the page is refreshed or the search query is cleared, the application will automatically send a request to fetch five new random cocktail items.
+Whenever the page is refreshed, the application will automatically send a request to fetch five new random cocktail items.
 
 Search Functionality:
 

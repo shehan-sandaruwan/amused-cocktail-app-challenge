@@ -12,16 +12,19 @@ import { searchFromFavourite } from "utils";
 export function useGetCocktails(query, isFavourite) {
   const [cocktailItems, setCockTailItems] = useState([]);
   const [apiResponsetWaiting, setApiResponseWaiting] = useState(false);
+  const [initialRenderedCocktails, setInitialRenderedCocktails] = useState([]);
   const [errorMessage, setErrorMessage] = useState("");
   const request_count = 5;
 
   useEffect(() => {
     if (isFavourite) {
       searchedItemFromFavouriteList();
-    } else if (!query) {
+    } else if (!query && !initialRenderedCocktails.length) {
       fetchFiveRandomCocktail();
-    } else {
+    } else if (query) {
       fetchCocktailByQueryName(query);
+    } else {
+      setCockTailItems(initialRenderedCocktails);
     }
   }, [query, isFavourite]);
 
@@ -58,6 +61,7 @@ export function useGetCocktails(query, isFavourite) {
         });
         setApiResponseWaiting(false);
         setCockTailItems(fetchedCocktailItemsArray);
+        setInitialRenderedCocktails(fetchedCocktailItemsArray);
       })
       .catch((error) => {
         setApiResponseWaiting(false);
