@@ -6,7 +6,7 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: #161212;
-  color: #ffffff;
+  background-color: var(--secondary-black);
+  color: var(--secondary-white);
   margin-top: 8rem;
 }

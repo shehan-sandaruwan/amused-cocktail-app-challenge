@@ -1,5 +1,5 @@
 .navbar-wrapper {
-  background-color: #161212;
+  background-color: var(--secondary-black);
 }
 
 .navbar-wrapper img {
@@ -10,6 +10,6 @@
 }
 
 .navbar-wrapper .navbar-toggler {
-  background-color: #d99924;
+  background-color: var(--primary-yellow);
   margin-right: 1rem;
 }

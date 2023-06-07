@@ -12,14 +12,14 @@
 }
 
 .cocktail-home-main h1 {
-  color: #fff;
+  color: var(--primary-white);
   text-align: center;
   text-transform: uppercase;
   margin-top: 3rem;
 }
 
 main.cocktail-home-main > p {
-  color: #fff;
+  color: var(--primary-white);
   text-align: center;
   width: 50%;
   margin: auto;
@@ -27,25 +27,25 @@ main.cocktail-home-main > p {
 }
 
 main.cocktail-home-main > button {
-  background-color: #d99a241a;
-  color: #d99924;
-  border: 1px solid #d99924;
+  background-color: var(--secondary-dark);
+  color: var(--primary-yellow);
+  border: 1px solid var(--primary-yellow);
   border-radius: 5px;
 }
 
 .cocktail-home-main > button.active {
-  background-color: #d99924;
-  color: #fff;
-  border: 1px solid #fff;
+  background-color: var(--primary-yellow);
+  color: var(--primary-white);
+  border: 1px solid var(--primary-white);
 }
 
 .cocktail-home-main input[type="search"] {
-  background-color: #333333;
-  color: #ffffff;
+  background-color: var(--primary-dark);
+  color: var(--secondary-white);
 }
 
 input[type="search"]::-webkit-input-placeholder {
-  color: #ffffff;
+  color: var(--secondary-white);
 }
 
 .renderer-wraper {

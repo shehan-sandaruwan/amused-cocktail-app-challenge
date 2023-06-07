@@ -2,12 +2,11 @@
   display: flex !important;
   flex-direction: column !important;
   flex-basis: 30%;
-  min-width: 25%;
 }
 
 .cocktail-item-card .card-body {
-  background-color: #161212;
-  color: #ffffff;
+  background-color: var(--secondary-black);
+  color: var(--secondary-white);
   position: relative;
 }
 

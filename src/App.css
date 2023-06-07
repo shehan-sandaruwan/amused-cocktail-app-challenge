@@ -1,5 +1,11 @@
 :root {
   --theme-color: #000;
+  --primary-yellow: #d99924;
+  --primary-white: #fff;
+  --secondary-white: #ffffff;
+  --primary-dark: #333333;
+  --secondary-dark: #d99a241a;
+  --secondary-black: #161212;
 }
 
 body {
