@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Project Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This application is a replica of the home page of https://www.thecocktaildb.com/. It is a relatively small application that focuses on replicating the functionality of the original website.
 
-## Available Scripts
+To manage the state within the application, I have utilized the useState hooks provided by React. These hooks offer a convenient and suitable mechanism to implement the expected functionality.
 
-In the project directory, you can run:
+In order to fetch cocktail items from the server, I have made use of the "/random" API endpoint. Since this endpoint only provides one item at a time, I needed to make five separate API calls to fulfill the requirement of displaying five random cocktails.
 
-### `npm start`
+Whenever the page is refreshed or the search query is cleared, the application will automatically send a request to fetch five new random cocktail items.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Search Functionality:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [When a user types in the search box, the application displays the search results based on the query. If no results are available, a message stating "No data available" is shown.]
+- [Additionally, I have included the option to add a cocktail item to the user's favorites list for better usability. This option is available for each cocktail item in the search results.]
 
-### `npm test`
+Adding to Favorites:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Users can add items to their favorites list by clicking on the heart icon (considered as the "add to favorites" button). To provide a better user experience, I have added a tooltip next to the icon to guide users on how to interact with it.]
+  To store the list of favorite items, I have used a static array. This array retains its values throughout the initial rendering of the application. However, if the page is refreshed, the data will be lost, and the array will return to an empty state.
 
-### `npm run build`
+Lastly, it's worth mentioning that this application is responsive and has been designed to work well on both mobile and desktop devices.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Table of Contents
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [Installation](#installation)
+- [Test](#usage)
+- [Assumption](#features)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+A little intro about the installation.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+$ git clone
+$ cd amused-cocktail-app-challenge
+$ npm install
+$ npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Test
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+A little intro about the run test suite.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+$ npm test
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Assumption
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+$ The application consists solely of a home page, without any additional pages or sections.
+$ Users are only required to monitor their favorite items while using the app. There are no other specific tasks or functionalities.
+$ Authentication is not necessary to view cocktail details or access any other features of the application. All content is freely accessible without any authentication requirements.
+```
