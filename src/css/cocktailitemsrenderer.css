@@ -1,0 +1,15 @@
+.cocktail-renderer-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-top: 3rem;
+  gap: 3rem;
+}
+
+@media (max-width: 550px) {
+  .cocktail-renderer-wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+}

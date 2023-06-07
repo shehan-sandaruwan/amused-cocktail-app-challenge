@@ -1,0 +1,57 @@
+.cocktail-home-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.home-page-carousal .carousel-inner div img {
+  height: 500px;
+  object-fit: cover;
+  margin-top: 2rem;
+}
+
+.cocktail-home-main h1 {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 3rem;
+}
+
+main.cocktail-home-main > p {
+  color: #fff;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+
+main.cocktail-home-main > button {
+  background-color: #d99a241a;
+  color: #d99924;
+  border: 1px solid #d99924;
+  border-radius: 5px;
+}
+
+.cocktail-home-main > button.active {
+  background-color: #d99924;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.cocktail-home-main input[type="search"] {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+input[type="search"]::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.renderer-wraper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}

@@ -1,0 +1,36 @@
+.cocktail-item-card {
+  display: flex !important;
+  flex-direction: column !important;
+  flex-basis: 30%;
+  min-width: 25%;
+}
+
+.cocktail-item-card .card-body {
+  background-color: #161212;
+  color: #ffffff;
+  position: relative;
+}
+
+.cocktail-item-card .card-body .favourite-icon {
+  position: absolute;
+  left: auto;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.cocktail-item-card .card-body .favourite-icon img {
+  width: 25px;
+  height: 25px;
+}
+
+.cocktail-item-card .card-title {
+  margin-bottom: 0 !important;
+  max-width: 75%;
+}
+
+@media (max-width: 550px) {
+  .cocktail-item-card {
+    width: 100%;
+  }
+}
