@@ -47,6 +47,8 @@ A little intro about the run test suite.
 
 ```
 $ npm test
+
+follow the terminal guideline if you need customize test execution
 ```
 
 ## Assumption

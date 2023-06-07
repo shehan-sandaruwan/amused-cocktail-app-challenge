@@ -6,11 +6,7 @@ export const addOrRemoveFromFavorite = (item) => {
   );
 
   if (existingItemIndex > -1 && !item.isFavourite) {
-    const newFavouriteList = favouriteList.slice(
-      existingItemIndex,
-      existingItemIndex + 1
-    );
-    favouriteList = newFavouriteList;
+    favouriteList.splice(existingItemIndex, 1);
   } else if (item.isFavourite) {
     favouriteList.push(item);
   }
@@ -23,7 +19,7 @@ export const getFovouriteList = () => {
 export const searchFromFavourite = (query) => {
   if (query) {
     const searchedFavouriteList = favouriteList.filter((item) =>
-      item.name.includes(query)
+      item.name.toLowerCase().includes(query.toLowerCase())
     );
     return searchedFavouriteList;
   }
